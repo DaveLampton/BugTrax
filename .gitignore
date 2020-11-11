@@ -1,3 +1,7 @@
+#Auth0
+a0-variables.js
+auth_config.json
+
 # Logs
 logs
 *.log
