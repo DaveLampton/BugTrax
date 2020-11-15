@@ -1,4 +1,23 @@
-const app = require('../server');
+const app = require("../server");
+//const https = require("https");
+//const fs = require("fs");
 const port = process.env.PORT || 3000;
 
 app.listen(port, () => console.log(`Server running on port ${port}`));
+
+// To use HTTPS, run
+// 'openssl req -nodes -new -x509 -keyout server.key -out server.cert'
+// to create a new self-signed certificate.
+// (see https://timonweb.com/javascript/running-expressjs-server-over-https/)
+//
+// https
+//   .createServer(
+//     {
+//       key: fs.readFileSync("server.key"),
+//       cert: fs.readFileSync("server.cert"),
+//     },
+//     app
+//   )
+//   .listen(port, function () {
+//     console.log(`HTTPS app listening on port ${port}!`);
+//   });
